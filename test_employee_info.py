@@ -12,10 +12,14 @@ def test_get_employees_by_age_range():
     
     assert(expected_names == [])
 
-    '''
 def test_calculate_average_salary():
-    #assert()
-    return 0
+
+    excepted_salary = 60166.67
+    returned_value = employee_info.calculate_average_salary()
+    
+    assert(excepted_salary == returned_value)
+
+'''
 def test_get_employees_by_dept():
     #assert()
     return 0
