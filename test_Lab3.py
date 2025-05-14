@@ -39,7 +39,7 @@ def test_bubble_sort_is_input_greater_than_ten():
 
     assert (result == 1)
 
-# Checks if it returns 0 when there's no numbers entered
+# Checks whether it returns 0 when there's no numbers entered
 # REQ-04
 def test_bubble_sort_no_number_entered():
     result = []
