@@ -16,13 +16,19 @@ def test_calculate_average_salary():
 
     excepted_salary = 60166.67
     returned_value = employee_info.calculate_average_salary()
-    
+
     assert(excepted_salary == returned_value)
 
-'''
-def test_get_employees_by_dept():
-    #assert()
-    return 0
-    '''
 
-#test_get_employees_by_age_range()
+def test_get_employees_by_dept():
+    department = "Marketing"
+    expected_names = ["Jane","Mary"]
+    return_name_list = employee_info.get_employees_by_dept(department)
+    for i in return_name_list:
+        for l in expected_names:
+            if i["name"] == l:
+                expected_names.remove(l)
+    assert(expected_names == [])
+
+    
+
