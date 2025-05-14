@@ -2,7 +2,7 @@ import employee_info
 
 def test_get_employees_by_age_range():
     upper_limit = 31
-    lower_limit = 18
+    lower_limit = 17
     expected_names = ['John','Jane','Mary']
     return_list = employee_info.get_employees_by_age_range(lower_limit,upper_limit)
     for i in return_list:
@@ -28,6 +28,7 @@ def test_get_employees_by_dept():
         for l in expected_names:
             if i["name"] == l:
                 expected_names.remove(l)
+
     assert(expected_names == [])
 
     
